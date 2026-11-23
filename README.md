@@ -28,6 +28,9 @@ Solo usa velas ya cerradas y abre como máximo una posición a la vez.
 
 ## Instalación
 
+**¿Usas Windows?** Sigue la guía detallada paso a paso: [GUIA_WINDOWS.md](GUIA_WINDOWS.md).
+En Windows puedes arrancar el bot con doble clic en `iniciar_bot.bat`.
+
 ```bash
 git clone https://github.com/andyher19/andy.git
 cd andy

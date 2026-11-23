@@ -13,7 +13,9 @@ def crear_exchange(modo: str, api_key: str = "", api_secret: str = ""):
         "apiKey": api_key or None,
         "secret": api_secret or None,
         "enableRateLimit": True,
-        "options": {"defaultType": "spot"},
+        # Corrige la diferencia entre el reloj del PC y el de Binance (error -1021).
+        "options": {"defaultType": "spot", "adjustForTimeDifference": True,
+                    "recvWindow": 10000},
     })
     if modo == "testnet":
         ex.set_sandbox_mode(True)
